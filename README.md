@@ -6,11 +6,14 @@ This is a project to analyse and predict depression states of patients. To run t
 python pip install -r requirements.txt
 ```
 
-
-
-**Note**: if you want to obtain the same results in `data/individual` and `report.pdf`, **DO NOT** run the code in `data_process.ipynb` before `individual_analysis.ipynb`, as it will overwrite the file `cleaned_data/control.csv`
-
 The code can then be ran after installing requirements. To performed the full analysis from the beginning, run the notebooks in the order `data_process.ipynb`, `individual_analysis.ipynb`, `group_analysis.ipynb`, and `prediction.ipynb`.
+
+**Note**: if you want to obtain the same results in `data/individual` and `report.pdf`, locate and set the following variables in `data_process.ipynb`:
+
+```
+condition_sample = [3]
+control_sample = [27]
+```
 
 # Project structured
 
