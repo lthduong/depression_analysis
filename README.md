@@ -1,12 +1,19 @@
 # Depression Analysis
 
 This is a project to analyse and predict depression states of patients. To run the code, simply install the requirements:
+
 ```
 python pip install -r requirements.txt
-``` 
-Then the code can be ran. The recommened order to run the notebooks is `data_process.ipynb`, `individual_analysis.ipynb`, `group_analysis.ipynb`, and `prediction.ipynb`.
+```
+
+
+
+**Note**: if you want to obtain the same results in `data/individual` and `report.pdf`, **DO NOT** run the code in `data_process.ipynb` before `individual_analysis.ipynb`, as it will overwrite the file `cleaned_data/control.csv`
+
+The code can then be ran after installing requirements. To performed the full analysis from the beginning, run the notebooks in the order `data_process.ipynb`, `individual_analysis.ipynb`, `group_analysis.ipynb`, and `prediction.ipynb`.
 
 # Project structured
+
 The data of the condtioned patients are stored in `data/condition`. Similarly, the data of the controlled patients are stored in `data/control`. The MADRS score data are stored in `data/scores.csv`
 
 The code in `data_process.ipynb` performed data preprocessing, and the output are stored in `cleaned_data/`. For more information on the types of preprocessing.
